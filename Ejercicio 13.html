@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <script>
+        function cargar(vec) {
+            for (let f = 0; f < vec.length; f++) {
+                let valor = prompt('Ingrese componente: ');
+                vec[f] = parseInt(valor);
+            }
+        }
+
+        function sumar(vec) {
+            let suma = 0;
+            for (let f = 0; f < vec.length; f++) {
+                suma = suma + vec[f];
+            }
+            document.write('Valor acumulado de las componentes: ' + suma + '<br>');
+        }
+
+        function sumarMayor36(vec) {
+            let suma = 0;
+            for (let f = 0; f < vec.length; f++) {
+                if (vec[f] > 36) {
+                    suma = suma + vec[f];
+                }
+            }
+            document.write('Valor acumulado de las componentes mayores a 36: ' + suma + '<br>');
+        }
+
+        function cantidadMayores50(vec) {
+            let cant = 0;
+            for (let f = 0; f < vec.length; f++) {
+                if (vec[f] > 50) {
+                    cant = cant + 1;
+                }
+            }
+            document.write('Cantidad de componentes mayores a 50: ' + cant + '<br>');
+        }
+
+        let vec = new Array(8);
+        cargar(vec);
+        sumar(vec);
+        sumarMayor36(vec);
+        cantidadMayores50(vec);
+    </script>
+
+  </body>
+</html>

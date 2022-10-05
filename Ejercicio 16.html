@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <form>
+        Ingrese nombre de usuario:
+        <input type="text" id="usuario"><br> Ingrese clave:
+        <input type="password" id="clave" onBlur="verificar(this)"><br>
+        <input type="button" value="confirmar">
+    </form>
+
+    <script>
+        function verificar(control) {
+            if (control.value.length < 7 || control.value.length > 20) {
+                alert('cantidad de caracteres no valido en la clave(deben ser entre 7-20 caracteres)');
+            }
+        }
+    </script>
+ 
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <script>
+        let x1, x2, suma;
+        x1 = parseInt(prompt('Ingrese el primer valor: '));
+        x2 = parseInt(prompt('Ingrese el segundo valor: '));
+        if (isNaN(x1) || isNaN(x2)) {
+            document.write('Al menos uno de los dos valores ingresados no es numérico.');
+        } else {
+            suma = x1 + x2;
+            document.write('La suma de los dos valores es: ' + suma);
+        }
+    </script>
+ 
+  </body>
+</html>
